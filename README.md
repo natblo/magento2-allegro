@@ -110,6 +110,20 @@ Aby klient mógł śledzić przesyłkę z jego zamówieniem należy wprowadzić 
 
 Wysyłkę numerów przesyłek można włączać lub wyłączać w konfiguracji wtyczki.
 
+## Automatyczna zmiana statusów zamówień w Allegro na "Wysłane"
+W panelu Allegro można ustawić automatyczną zmianę statusu zamówień na "Wysłane". 
+Jak zamówienie w Magento ma status "complete" i ma wprowadzony numer listu przewozowego to wystarczy zaznaczyć w panelu Allegro checkbox "automatycznie oznaczaj jako "wysłane" po dodaniu numeru listu przewozowego". 
+Checkbox "automatycznie oznaczaj jako "wysłane" po dodaniu numeru listu przewozowego" pojawia się w Allegro, w momencie jak wprowadzamy ręcznie numer przesyłki dla danego zamówienia. 
+Po zalogowaniu do panelu Allegro:
+1. Należy wejść w Zamówienia,
+2. Wybieramy dane zamówienie i wchodzimy w szczegóły zamówienia → Szczegóły,
+3. Szukamy opcji → DODAJ NUMERY PRZESYŁEK i dodajemy ręcznie danym numer przesyłki i przewoźnika,
+4. Wystarczy wprowadzić jeden numer przesyłki i wtedy Allegro zapyta, czy "automatycznie oznaczać zamówienia jako "wysłane" po dodaniu numeru listu przewozowego",
+5. Zaznaczamy checkbox o automatycznym oznaczaniu jako "wysłane"
+
+Po tym jednorazowym ustawieniu wszystkie nowe zamówienia, złożone za pośrednictwem Allegro, które otrzymają w Magento numer listu przewozowego, po przesłaniu tych dancyh do Allegro zmienią status na "Wysłane".
+
+
 ## Publikowanie ofert
 Za pomocą wtyczki możemy wystawiać produkty z Magento na Allegro. Aby to zrobić należy:
 1. Na koncie Allegro utworzyć [cennik dostaw](https://allegro.pl/pomoc/dla-sprzedajacych/cennik-dostawy/cenniki-dostawy-tworzenie-edycja-i-podmiana-B826XYWjvFg)
